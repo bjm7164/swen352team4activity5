@@ -53,6 +53,9 @@ public class MyOptional<T> {
     }
 
     public static <T> MyOptional<T> ofNullable(T value) {
+        if (value == null) {
+            return empty();
+        }
         return new MyOptional<>(value);
     }
 

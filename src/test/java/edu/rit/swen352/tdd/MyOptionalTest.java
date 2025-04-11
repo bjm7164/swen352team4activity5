@@ -43,7 +43,7 @@ class MyOptionalTest {
         MyOptional<String> optional = MyOptional.ofNullable("Hello");
         assertEquals("Hello", optional.get());
         MyOptional<String> emptyOptional = MyOptional.ofNullable(null);
-        assertNotNull(emptyOptional.get());
+        assertEquals(emptyOptional.get(), MyOptional.empty().get());
     }
 
 }
