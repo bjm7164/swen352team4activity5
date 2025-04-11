@@ -24,15 +24,16 @@ package edu.rit.swen352.tdd;
  * @param <T> the type of element.
  */
 public class MyOptional<T> {
+    private static final MyOptional<?> EMPTY = new MyOptional<>();
 
-    private T element;
+    private final T element;
 
 
-    public MyOptional() {
+    private MyOptional() {
         this.element = null;
     }
 
-    public MyOptional(T element) {
+    private MyOptional(T element) {
         this.element = element;
     }
 
@@ -42,6 +43,10 @@ public class MyOptional<T> {
 
     public T get() {
         return element;
+    }
+
+    public static <T> MyOptional<T> of(T value) {
+        return null;
     }
 
 

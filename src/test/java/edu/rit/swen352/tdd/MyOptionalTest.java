@@ -12,9 +12,8 @@ class MyOptionalTest {
      */
     @org.junit.jupiter.api.Test
     void testConstructor() {
-        String value = "Hello, World!";
-        MyOptional<String> optional = new MyOptional<>(value);
-        assertEquals(value, optional.get());
+        MyOptional<String> optional = MyOptional.empty();
+        assertEquals(null, optional.get());
     }
 
     /**
