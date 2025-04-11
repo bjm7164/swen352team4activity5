@@ -17,4 +17,13 @@ class MyOptionalTest {
         assertEquals(value, optional.get());
     }
 
+    /**
+     * Test the empty() method.
+     */
+    @org.junit.jupiter.api.Test
+    void testEmpty() {
+        MyOptional<String> optional = MyOptional.empty();
+        assertNotNull(optional);
+    }
+
 }

@@ -29,15 +29,16 @@ public class MyOptional<T> {
 
 
     public MyOptional() {
+        this.element = null;
     }
 
     public MyOptional(T element) {
         this.element = element;
     }
 
-//    public static <T> MyOptional<T> empty() {
-//        return null;
-//    }
+    public static <T> MyOptional<T> empty() {
+        return null;
+    }
 
     public T get() {
         return element;
