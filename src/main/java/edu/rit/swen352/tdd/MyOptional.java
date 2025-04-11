@@ -25,14 +25,17 @@ package edu.rit.swen352.tdd;
  */
 public class MyOptional<T> {
 
-    private final T value;
 
-    public MyOptional(T value) {
-        this.value = value;
+
+    public MyOptional() {
     }
 
+//    public static <T> MyOptional<T> empty() {
+//        return null;
+//    }
+
     public T get() {
-        return this.value;
+        return null;
     }
 
 
