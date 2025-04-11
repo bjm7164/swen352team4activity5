@@ -82,4 +82,19 @@ class MyOptionalTest {
         assertFalse(emptyMappedOptional.isPresent());
     }
 
+    /**
+     * Test ifPresent() method.
+     */
+    @org.junit.jupiter.api.Test
+    void testIfPresent() {
+        MyOptional<String> optional = MyOptional.of("Hello");
+        StringBuilder result = new StringBuilder();
+        optional.ifPresent(result::append);
+        assertEquals("Hello", result.toString());
+
+        MyOptional<String> emptyOptional = MyOptional.empty();
+        emptyOptional.ifPresent(result::append);
+        assertEquals("Hello", result.toString());
+    }
+
 }

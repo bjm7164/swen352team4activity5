@@ -74,5 +74,11 @@ public class MyOptional<T> {
         return new MyOptional<>(mappedValue);
     }
 
+    public void ifPresent(java.util.function.Consumer<? super T> consumer) {
+        if (element != null) {
+            return;
+        }
+    }
+
 
 }
