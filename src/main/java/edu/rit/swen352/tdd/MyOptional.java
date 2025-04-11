@@ -42,6 +42,9 @@ public class MyOptional<T> {
     }
 
     public T get() {
+        if (element == null) {
+            throw new java.util.NoSuchElementException("No value present");
+        }
         return element;
     }
 
