@@ -76,6 +76,8 @@ class MyOptionalTest {
         MyOptional<String> optional = MyOptional.of("Hello");
         MyOptional<Integer> mappedOptional = optional.map(String::length);
         assertEquals(5, mappedOptional.get());
+
+
     }
 
 }
