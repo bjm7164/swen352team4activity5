@@ -35,4 +35,13 @@ class MyOptionalTest {
         assertThrows(NullPointerException.class, () -> MyOptional.of(null));
     }
 
+    /**
+     * Test the ofNullable() method.
+     */
+    @org.junit.jupiter.api.Test
+    void testOfNullable() {
+        MyOptional<String> optional = MyOptional.ofNullable("Hello");
+        assertEquals("Hello", optional.get());
+    }
+
 }
