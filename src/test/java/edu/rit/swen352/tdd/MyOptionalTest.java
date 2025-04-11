@@ -42,6 +42,8 @@ class MyOptionalTest {
     void testOfNullable() {
         MyOptional<String> optional = MyOptional.ofNullable("Hello");
         assertEquals("Hello", optional.get());
+        MyOptional<String> emptyOptional = MyOptional.ofNullable(null);
+        assertNotNull(emptyOptional.get());
     }
 
 }
