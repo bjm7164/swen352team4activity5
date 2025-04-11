@@ -57,4 +57,15 @@ class MyOptionalTest {
         assertFalse(emptyOptional.isPresent());
     }
 
+    /**
+     * Test the get() method.
+     */
+    @org.junit.jupiter.api.Test
+    void testGet() {
+        MyOptional<String> optional = MyOptional.of("Hello");
+        assertEquals("Hello", optional.get());
+        MyOptional<String> emptyOptional = MyOptional.empty();
+        assertThrows(java.util.NoSuchElementException.class, emptyOptional::get);
+    }
+
 }
