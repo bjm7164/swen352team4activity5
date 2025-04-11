@@ -13,7 +13,7 @@ class MyOptionalTest {
     @org.junit.jupiter.api.Test
     void testConstructor() {
         MyOptional<String> optional = MyOptional.empty();
-        assertEquals(null, optional.get());
+        assertNull(optional.get());
     }
 
     /**
@@ -23,6 +23,16 @@ class MyOptionalTest {
     void testEmpty() {
         MyOptional<String> optional = MyOptional.empty();
         assertNotNull(optional);
+    }
+
+    /**
+     * Test the of() method.
+     */
+    @org.junit.jupiter.api.Test
+    void testOf() {
+        MyOptional<String> optional = MyOptional.of("Hello");
+        assertNotNull(optional);
+        assertEquals("Hello", optional.get());
     }
 
 }
