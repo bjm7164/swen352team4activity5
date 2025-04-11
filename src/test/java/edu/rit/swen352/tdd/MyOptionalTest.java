@@ -46,4 +46,15 @@ class MyOptionalTest {
         assertEquals(emptyOptional.get(), MyOptional.empty().get());
     }
 
+    /**
+     * Test the isPresent() method.
+     */
+    @org.junit.jupiter.api.Test
+    void testIsPresent() {
+        MyOptional<String> optional = MyOptional.of("Hello");
+        assertTrue(optional.isPresent());
+        MyOptional<String> emptyOptional = MyOptional.empty();
+        assertFalse(emptyOptional.isPresent());
+    }
+
 }
