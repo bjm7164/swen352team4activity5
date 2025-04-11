@@ -37,7 +37,7 @@ public class MyOptional<T> {
     }
 
     public static <T> MyOptional<T> empty() {
-        return null;
+        return new MyOptional<>();
     }
 
     public T get() {
