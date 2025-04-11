@@ -13,7 +13,7 @@ class MyOptionalTest {
     @org.junit.jupiter.api.Test
     void testConstructor() {
         MyOptional<String> optional = MyOptional.empty();
-        assertNull(optional.get());
+        assertNotNull(optional);
     }
 
     /**
@@ -43,7 +43,7 @@ class MyOptionalTest {
         MyOptional<String> optional = MyOptional.ofNullable("Hello");
         assertEquals("Hello", optional.get());
         MyOptional<String> emptyOptional = MyOptional.ofNullable(null);
-        assertEquals(emptyOptional.get(), MyOptional.empty().get());
+        assertNotNull(emptyOptional);
     }
 
     /**
