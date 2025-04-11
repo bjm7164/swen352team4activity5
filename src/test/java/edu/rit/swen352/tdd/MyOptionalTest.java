@@ -68,4 +68,14 @@ class MyOptionalTest {
         assertThrows(java.util.NoSuchElementException.class, emptyOptional::get);
     }
 
+    /**
+     * Test the map() method.
+     */
+    @org.junit.jupiter.api.Test
+    void testMap() {
+        MyOptional<String> optional = MyOptional.of("Hello");
+        MyOptional<Integer> mappedOptional = optional.map(String::length);
+        assertEquals(5, mappedOptional.get());
+    }
+
 }

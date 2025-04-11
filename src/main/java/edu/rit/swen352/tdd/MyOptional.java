@@ -66,5 +66,9 @@ public class MyOptional<T> {
         return element != null;
     }
 
+    public <R> MyOptional<R> map(java.util.function.Function<? super T, ? extends R> mapper) {
+        return null;
+    }
+
 
 }
