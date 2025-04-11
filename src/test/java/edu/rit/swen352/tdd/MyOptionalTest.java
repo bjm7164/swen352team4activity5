@@ -31,7 +31,6 @@ class MyOptionalTest {
     @org.junit.jupiter.api.Test
     void testOf() {
         MyOptional<String> optional = MyOptional.of("Hello");
-        assertNotNull(optional);
         assertEquals("Hello", optional.get());
     }
 

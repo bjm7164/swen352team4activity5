@@ -46,7 +46,7 @@ public class MyOptional<T> {
     }
 
     public static <T> MyOptional<T> of(T value) {
-        return null;
+        return new MyOptional<>(value);
     }
 
 
