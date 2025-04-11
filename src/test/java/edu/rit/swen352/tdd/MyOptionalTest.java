@@ -77,7 +77,9 @@ class MyOptionalTest {
         MyOptional<Integer> mappedOptional = optional.map(String::length);
         assertEquals(5, mappedOptional.get());
 
-
+        MyOptional<String> emptyOptional = MyOptional.empty();
+        MyOptional<Integer> emptyMappedOptional = emptyOptional.map(String::length);
+        assertFalse(emptyMappedOptional.isPresent());
     }
 
 }
