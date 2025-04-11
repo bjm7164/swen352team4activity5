@@ -13,7 +13,7 @@ class MyOptionalTest {
     @org.junit.jupiter.api.Test
     void testConstructor() {
         String value = "Hello, World!";
-        MyOptional<String> optional = new MyOptional<>();
+        MyOptional<String> optional = new MyOptional<>(value);
         assertEquals(value, optional.get());
     }
 

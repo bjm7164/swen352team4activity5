@@ -25,9 +25,14 @@ package edu.rit.swen352.tdd;
  */
 public class MyOptional<T> {
 
+    private T element;
 
 
     public MyOptional() {
+    }
+
+    public MyOptional(T element) {
+        this.element = element;
     }
 
 //    public static <T> MyOptional<T> empty() {
@@ -35,7 +40,7 @@ public class MyOptional<T> {
 //    }
 
     public T get() {
-        return null;
+        return element;
     }
 
 
