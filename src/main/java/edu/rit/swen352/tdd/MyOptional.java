@@ -60,7 +60,7 @@ public class MyOptional<T> {
     }
 
     public boolean isPresent() {
-        return false;
+        return element != null;
     }
 
 
