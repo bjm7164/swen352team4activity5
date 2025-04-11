@@ -32,6 +32,7 @@ class MyOptionalTest {
     void testOf() {
         MyOptional<String> optional = MyOptional.of("Hello");
         assertEquals("Hello", optional.get());
+        assertThrows(NullPointerException.class, () -> MyOptional.of(null));
     }
 
 }
