@@ -76,7 +76,7 @@ public class MyOptional<T> {
 
     public void ifPresent(java.util.function.Consumer<? super T> consumer) {
         if (element != null) {
-            return;
+            consumer.accept(element);
         }
     }
 
