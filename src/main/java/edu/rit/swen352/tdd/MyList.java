@@ -39,4 +39,10 @@ public class MyList<T> {
         return elements.size();
     }
 
+    public void add(T element)
+    {
+        elements.add(element);
+    }
+
+
 }
