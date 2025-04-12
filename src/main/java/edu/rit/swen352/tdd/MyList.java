@@ -47,5 +47,8 @@ public class MyList<T> {
         }
     }
 
-
+    public void remove(T element)
+    {
+        elements.remove(element);
+    }
 }

@@ -75,7 +75,7 @@ class MyListTest {
     }
 
     /**
-     * Test adding one element to the object when the element already exists
+     * Test removing an element from the list
      */
     @org.junit.jupiter.api.Test
     void testRemoveElement()
