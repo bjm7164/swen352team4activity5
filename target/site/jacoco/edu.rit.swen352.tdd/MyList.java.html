@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MyList.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Activity TDD</a> &gt; <a href="index.source.html" class="el_package">edu.rit.swen352.tdd</a> &gt; <span class="el_source">MyList.java</span></div><h1>MyList.java</h1><pre class="source lang-java linenums">package edu.rit.swen352.tdd;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * MyList is a flexible-sized sequence of elements with no gaps.
+ *
+ * &lt;p&gt;
+ * You must implement these features:
+ * &lt;ul&gt;
+ *   &lt;li&gt;constructor: with varargs of initial elements&lt;/li&gt;
+ *   &lt;li&gt;add: add an element to the list; no-op if the element is already in the list (by reference)&lt;/li&gt;
+ *   &lt;li&gt;remove: remove an element by reference&lt;/li&gt;
+ *   &lt;li&gt;get: returns the element at a specific index;
+ *     throw {@link java.util.NoSuchElementException} if the index is outside the size of the list&lt;/li&gt;
+ *   &lt;li&gt;isEmpty: queries if the list is empty&lt;/li&gt;
+ *   &lt;li&gt;size: queries how many elements in the list&lt;/li&gt;
+ *   &lt;li&gt;forEach: iterates over each element and executes the {@link java.util.function.Consumer} parameter&lt;/li&gt;
+ * &lt;/ul&gt;
+ *
+ * @param &lt;T&gt; the type of elements in the list.
+ */
+public class MyList&lt;T&gt; {
+    private List&lt;T&gt; elements;
+
+    public MyList()
+<span class="fc" id="L28">    {</span>
+<span class="fc" id="L29">        elements = new ArrayList&lt;T&gt;();</span>
+<span class="fc" id="L30">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

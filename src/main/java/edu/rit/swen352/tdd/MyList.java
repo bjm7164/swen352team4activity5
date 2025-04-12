@@ -1,5 +1,8 @@
 package edu.rit.swen352.tdd;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * MyList is a flexible-sized sequence of elements with no gaps.
  *
@@ -19,5 +22,11 @@ package edu.rit.swen352.tdd;
  * @param <T> the type of elements in the list.
  */
 public class MyList<T> {
+    private List<T> elements;
+
+    public MyList()
+    {
+        elements = new ArrayList<T>();
+    }
 
 }
