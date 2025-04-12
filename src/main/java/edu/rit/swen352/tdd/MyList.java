@@ -41,7 +41,10 @@ public class MyList<T> {
 
     public void add(T element)
     {
-        elements.add(element);
+        if (!elements.contains(element))
+        {
+            elements.add(element);
+        }
     }
 
 

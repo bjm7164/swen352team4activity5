@@ -41,8 +41,11 @@ public class MyList&lt;T&gt; {
 
     public void add(T element)
     {
-<span class="fc" id="L44">        elements.add(element);</span>
-<span class="fc" id="L45">    }</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        if (!elements.contains(element))</span>
+        {
+<span class="fc" id="L46">            elements.add(element);</span>
+        }
+<span class="fc" id="L48">    }</span>
 
 
 }
