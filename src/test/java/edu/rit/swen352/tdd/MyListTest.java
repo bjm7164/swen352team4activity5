@@ -7,4 +7,16 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class MyListTest {
 
+    /**
+     * Test building the object
+     */
+    @org.junit.jupiter.api.Test
+    void testConstructorEmpty()
+    {
+        MyList<String> myList = new MyList<String>();
+        assertNotNull(myList);
+    }
+
+
+
 }
