@@ -55,6 +55,25 @@ class MyListTest {
         assertEquals(expected.size(), myList.size());
     }
 
+    /**
+     * Test adding one element to the object when the element already exists
+     */
+    @org.junit.jupiter.api.Test
+    void testAddPreexistingElement()
+    {
+        List expected = new ArrayList<String>();
+        expected.add("hi");
+        expected.add("professor");
+        expected.add("Basham");
+
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        assertNotNull(myList);
+        int initalSize = myList.size();
+        assertEquals(expected.size(), initalSize);
+        myList.add("hi");
+        assertEquals(initalSize, myList.size());
+    }
+
 
 
 }
