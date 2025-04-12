@@ -31,7 +31,7 @@ class MyListTest {
         test.add("professor");
         test.add("Basham");
 
-        MyList<String> myList = new MyList<String>();
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
         assertNotNull(myList);
         assertEquals(test.size(), myList.size());
     }
