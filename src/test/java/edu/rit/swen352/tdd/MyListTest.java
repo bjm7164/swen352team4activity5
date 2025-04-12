@@ -74,6 +74,19 @@ class MyListTest {
         assertEquals(initalSize, myList.size());
     }
 
+    /**
+     * Test adding one element to the object when the element already exists
+     */
+    @org.junit.jupiter.api.Test
+    void testRemoveElement()
+    {
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        assertNotNull(myList);
+        assertEquals(3, myList.size());
+        myList.remove("hi");
+        assertEquals(2, myList.size());
+    }
+
 
 
 }
