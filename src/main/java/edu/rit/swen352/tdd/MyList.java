@@ -24,9 +24,19 @@ import java.util.List;
 public class MyList<T> {
     private List<T> elements;
 
-    public MyList()
+    public MyList(T... initals)
     {
-        elements = new ArrayList<T>();
+        elements = new ArrayList<>();
+
+        for (T item : initals)
+        {
+            elements.add(item);
+        }
+    }
+
+    public int size()
+    {
+        return elements.size();
     }
 
 }
