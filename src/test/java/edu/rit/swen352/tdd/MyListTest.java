@@ -36,6 +36,25 @@ class MyListTest {
         assertEquals(test.size(), myList.size());
     }
 
+    /**
+     * Test adding one element to the object
+     */
+    @org.junit.jupiter.api.Test
+    void testAddElement()
+    {
+        List expected = new ArrayList<String>();
+        expected.add("hi");
+        expected.add("professor");
+        expected.add("Basham");
+        expected.add("I love formula one!");
+
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        assertNotNull(myList);
+        assertEquals(expected.size()-1, myList.size());
+        myList.add("I love formula one!");
+        assertEquals(expected.size(), myList.size());
+    }
+
 
 
 }
