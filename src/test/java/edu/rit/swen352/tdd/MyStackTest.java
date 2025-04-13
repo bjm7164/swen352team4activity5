@@ -3,6 +3,8 @@ package edu.rit.swen352.tdd;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.NoSuchElementException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -55,6 +57,7 @@ class MyStackTest {
     @DisplayName("Pop item from empty stack")
     void popFromEmptyStack() {
         MyStack<Integer> myStack = new MyStack<>();
-        Object element = myStack.pop();
+        assertThrows(NoSuchElementException.class, () -> myStack.pop());
+        assertEquals(-1, myStack.getTop());
     }
 }
