@@ -83,4 +83,11 @@ class MyStackTest {
         myStack.push(5);
         assertEquals(1, myStack.size());
     }
+
+    @Test
+    @DisplayName("size, empty stack")
+    void sizeEmpty() {
+        MyStack<Integer> myStack = new MyStack<>();
+        assertEquals(0, myStack.size());
+    }
 }
