@@ -122,6 +122,17 @@ class MyListTest {
         assertTrue(myList.isEmpty());
     }
 
+    /**
+     * Test isEmpty with a populated list
+     */
+    @org.junit.jupiter.api.Test
+    void testIsEmptyFalse()
+    {
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        assertNotNull(myList);
+        assertFalse(myList.isEmpty());
+    }
+
 
 
 }
