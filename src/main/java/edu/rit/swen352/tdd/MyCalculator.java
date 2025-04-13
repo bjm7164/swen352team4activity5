@@ -22,7 +22,8 @@ public class MyCalculator {
     }
 
     public int add(int x, int y) {
-        return 0;
+        this.result = x + y;
+        return result;
     }
 
     public int getResult() {
