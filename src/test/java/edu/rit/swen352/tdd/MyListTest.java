@@ -87,6 +87,18 @@ class MyListTest {
         assertEquals(2, myList.size());
     }
 
+    /**
+     * Test getting an element that exists
+     */
+    @org.junit.jupiter.api.Test
+    void testGetElementValid()
+    {
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        assertNotNull(myList);
+        String item = myList.get(0);
+        assertEquals("professor", item);
+    }
+
 
 
 }
