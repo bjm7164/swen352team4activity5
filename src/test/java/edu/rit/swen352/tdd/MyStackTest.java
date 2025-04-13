@@ -29,6 +29,7 @@ class MyStackTest {
         MyStack<Integer> myStack = new MyStack<>();
         myStack.push(123);
         assertEquals(0, myStack.getTop());
+        assertEquals(123, myStack.peek());
     }
 
     @Test
@@ -38,5 +39,6 @@ class MyStackTest {
         myStack.push(1);
         myStack.push(2);
         assertThrows(IllegalStateException.class, () -> myStack.push(3));
+        assertEquals(2, myStack.peek());
     }
 }

@@ -48,4 +48,8 @@ public class MyStack<T> {
     public int getTop() {
         return this.top;
     }
+
+    public Object peek() {
+        return this.stack[top];
+    }
 }
