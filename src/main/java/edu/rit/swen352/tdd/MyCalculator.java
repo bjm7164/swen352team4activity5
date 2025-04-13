@@ -32,7 +32,8 @@ public class MyCalculator {
     }
 
     public int multiply(int x, int y) {
-        return 0;
+        this.result = x * y;
+        return this.result;
     }
 
     public int getResult() {
