@@ -15,7 +15,7 @@ public class MyBlackjackDealerTest {
     }
 
     /**
-     * Test constructor makes an object
+     * Test hit when dealer should hit
      */
     @org.junit.jupiter.api.Test
     void testHitAction()
@@ -29,7 +29,7 @@ public class MyBlackjackDealerTest {
     }
 
     /**
-     * Test constructor makes an object
+     * Test hit when dealer should stay
      */
     @org.junit.jupiter.api.Test
     void testHitPassive()
@@ -43,7 +43,7 @@ public class MyBlackjackDealerTest {
     }
 
     /**
-     * Test constructor makes an object
+     * Test dealing a card out of the deck
      */
     @org.junit.jupiter.api.Test
     void testDealCard()
@@ -53,6 +53,19 @@ public class MyBlackjackDealerTest {
 
         dealer.dealCard();
         assertEquals(51, dealer.getDeckSize());
+    }
+
+    /**
+     * Test dealing a hand to a player
+     */
+    @org.junit.jupiter.api.Test
+    void testDealHandOnePlayer()
+    {
+        MyBlackjackDealer dealer = new MyBlackjackDealer();
+        assertNotNull(dealer);
+
+        dealer.dealCard();
+        assertEquals(48, dealer.getDeckSize());
     }
 
 }
