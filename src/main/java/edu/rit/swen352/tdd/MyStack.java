@@ -38,10 +38,11 @@ public class MyStack<T> {
     }
 
     public void push(T element) {
-
+        top++;
+        stack[top] = element;
     }
 
     public int getTop() {
-        return -1;
+        return this.top;
     }
 }
