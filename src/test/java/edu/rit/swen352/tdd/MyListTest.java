@@ -101,7 +101,7 @@ class MyListTest {
     }
 
     /**
-     * Test getting an element that exists
+     * Test getting an element outside of the list size
      */
     @org.junit.jupiter.api.Test
     void testGetElementInvalid()
@@ -110,6 +110,17 @@ class MyListTest {
         assertNotNull(myList);
         String item = myList.get(4);
         assertThrows(NoSuchElementException.class, () -> myList.get(4));
+    }
+
+    /**
+     * Test isEmpty with an empty list
+     */
+    @org.junit.jupiter.api.Test
+    void testIsEmptyTrue()
+    {
+        MyList<String> myList = new MyList<String>();
+        assertNotNull(myList);
+        assertTrue(myList.isEmpty());
     }
 
 

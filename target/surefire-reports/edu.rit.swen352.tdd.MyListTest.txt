@@ -1,15 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: edu.rit.swen352.tdd.MyListTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.091 s <<< FAILURE! -- in edu.rit.swen352.tdd.MyListTest
-edu.rit.swen352.tdd.MyListTest.testGetElementInvalid -- Time elapsed: 0.035 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <this isnt here> but was: <hi>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.086 s <<< FAILURE! -- in edu.rit.swen352.tdd.MyListTest
+edu.rit.swen352.tdd.MyListTest.testGetElementInvalid -- Time elapsed: 0.030 s <<< ERROR!
+java.util.NoSuchElementException: Index out of bounds
+	at edu.rit.swen352.tdd.MyList.get(MyList.java:60)
 	at edu.rit.swen352.tdd.MyListTest.testGetElementInvalid(MyListTest.java:111)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)

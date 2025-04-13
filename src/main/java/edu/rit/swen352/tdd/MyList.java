@@ -2,6 +2,7 @@ package edu.rit.swen352.tdd;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 /**
  * MyList is a flexible-sized sequence of elements with no gaps.
@@ -54,6 +55,14 @@ public class MyList<T> {
 
     public T get(int index)
     {
-        return elements.get(index);
+        if (index > elements.size())
+        {
+            throw new NoSuchElementException("Index out of bounds");
+        }
+        else
+        {
+            return elements.get(index);
+        }
+
     }
 }

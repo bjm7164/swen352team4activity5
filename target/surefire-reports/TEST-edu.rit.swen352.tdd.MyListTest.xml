@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="edu.rit.swen352.tdd.MyListTest" time="0.091" tests="7" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="edu.rit.swen352.tdd.MyListTest" time="0.086" tests="7" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\JT\.jdks\corretto-21.0.6\bin"/>
-    <property name="sun.java.command" value="C:\Users\JT\AppData\Local\Temp\surefire3123086453377057745\surefirebooter-20250413163526667_5.jar C:\Users\JT\AppData\Local\Temp\surefire3123086453377057745 2025-04-13T16-35-26_389-jvmRun1 surefire-20250413163526667_1tmp surefire_0-20250413163526667_3tmp"/>
+    <property name="sun.java.command" value="C:\Users\JT\AppData\Local\Temp\surefire1011319477926989521\surefirebooter-20250413163850493_6.jar C:\Users\JT\AppData\Local\Temp\surefire1011319477926989521 2025-04-13T16-38-50_220-jvmRun1 surefire-20250413163850493_1tmp surefire_0-20250413163850493_3tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\JT\RIT\swen352team4activity5\target\test-classes;C:\Users\JT\RIT\swen352team4activity5\target\classes;C:\Users\JT\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\JT\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\JT\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\JT\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\JT\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\JT\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\JT\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\JT\.m2\repository\org\mockito\mockito-core\5.12.0\mockito-core-5.12.0.jar;C:\Users\JT\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\JT\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.15\byte-buddy-agent-1.14.15.jar;C:\Users\JT\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\JT\AppData\Local\Temp\surefire3123086453377057745\surefirebooter-20250413163526667_5.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\JT\AppData\Local\Temp\surefire1011319477926989521\surefirebooter-20250413163850493_6.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.6+7-LTS"/>
@@ -60,14 +60,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testGetElementInvalid" classname="edu.rit.swen352.tdd.MyListTest" time="0.035">
-    <failure message="expected: &lt;this isnt here&gt; but was: &lt;hi&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <this isnt here> but was: <hi>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+  <testcase name="testGetElementInvalid" classname="edu.rit.swen352.tdd.MyListTest" time="0.03">
+    <error message="Index out of bounds" type="java.util.NoSuchElementException"><![CDATA[java.util.NoSuchElementException: Index out of bounds
+	at edu.rit.swen352.tdd.MyList.get(MyList.java:60)
 	at edu.rit.swen352.tdd.MyListTest.testGetElementInvalid(MyListTest.java:111)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -140,12 +135,12 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
+]]></error>
   </testcase>
-  <testcase name="testAddPreexistingElement" classname="edu.rit.swen352.tdd.MyListTest" time="0.001"/>
+  <testcase name="testAddPreexistingElement" classname="edu.rit.swen352.tdd.MyListTest" time="0.002"/>
   <testcase name="testAddElement" classname="edu.rit.swen352.tdd.MyListTest" time="0.002"/>
-  <testcase name="testConstructorPopulated" classname="edu.rit.swen352.tdd.MyListTest" time="0.002"/>
-  <testcase name="testGetElementValid" classname="edu.rit.swen352.tdd.MyListTest" time="0.001"/>
-  <testcase name="testRemoveElement" classname="edu.rit.swen352.tdd.MyListTest" time="0.0"/>
+  <testcase name="testConstructorPopulated" classname="edu.rit.swen352.tdd.MyListTest" time="0.001"/>
+  <testcase name="testGetElementValid" classname="edu.rit.swen352.tdd.MyListTest" time="0.002"/>
+  <testcase name="testRemoveElement" classname="edu.rit.swen352.tdd.MyListTest" time="0.001"/>
   <testcase name="testConstructor" classname="edu.rit.swen352.tdd.MyListTest" time="0.001"/>
 </testsuite>

@@ -2,6 +2,7 @@
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 /**
  * MyList is a flexible-sized sequence of elements with no gaps.
@@ -25,36 +26,44 @@ public class MyList&lt;T&gt; {
     private List&lt;T&gt; elements;
 
     public MyList(T... initals)
-<span class="fc" id="L28">    {</span>
-<span class="fc" id="L29">        elements = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L29">    {</span>
+<span class="fc" id="L30">        elements = new ArrayList&lt;&gt;();</span>
 
-<span class="fc bfc" id="L31" title="All 2 branches covered.">        for (T item : initals)</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">        for (T item : initals)</span>
         {
-<span class="fc" id="L33">            elements.add(item);</span>
+<span class="fc" id="L34">            elements.add(item);</span>
         }
-<span class="fc" id="L35">    }</span>
+<span class="fc" id="L36">    }</span>
 
     public int size()
     {
-<span class="fc" id="L39">        return elements.size();</span>
+<span class="fc" id="L40">        return elements.size();</span>
     }
 
     public void add(T element)
     {
-<span class="fc bfc" id="L44" title="All 2 branches covered.">        if (!elements.contains(element))</span>
+<span class="fc bfc" id="L45" title="All 2 branches covered.">        if (!elements.contains(element))</span>
         {
-<span class="fc" id="L46">            elements.add(element);</span>
+<span class="fc" id="L47">            elements.add(element);</span>
         }
-<span class="fc" id="L48">    }</span>
+<span class="fc" id="L49">    }</span>
 
     public void remove(T element)
     {
-<span class="fc" id="L52">        elements.remove(element);</span>
-<span class="fc" id="L53">    }</span>
+<span class="fc" id="L53">        elements.remove(element);</span>
+<span class="fc" id="L54">    }</span>
 
     public T get(int index)
     {
-<span class="fc" id="L57">        return elements.get(index);</span>
+<span class="fc bfc" id="L58" title="All 2 branches covered.">        if (index &gt; elements.size())</span>
+        {
+<span class="fc" id="L60">            throw new NoSuchElementException(&quot;Index out of bounds&quot;);</span>
+        }
+        else
+        {
+<span class="fc" id="L64">            return elements.get(index);</span>
+        }
+
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
