@@ -37,6 +37,6 @@ class MyStackTest {
         MyStack<Integer> myStack = new MyStack<>(2);
         myStack.push(1);
         myStack.push(2);
-        myStack.push(3);
+        assertThrows(IllegalStateException.class, () -> myStack.push(3));
     }
 }

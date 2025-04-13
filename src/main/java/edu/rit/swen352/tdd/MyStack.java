@@ -37,7 +37,10 @@ public class MyStack<T> {
         return this.capacity;
     }
 
-    public void push(T element) {
+    public void push(T element) throws IllegalStateException {
+        if (top + 1 == capacity) {
+            throw new IllegalStateException("Cannot push onto a full stack.");
+        }
         top++;
         stack[top] = element;
     }
