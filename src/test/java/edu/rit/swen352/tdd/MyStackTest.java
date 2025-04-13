@@ -50,4 +50,11 @@ class MyStackTest {
         Object element = myStack.pop();
         assertEquals(123, element);
     }
+
+    @Test
+    @DisplayName("Pop item from empty stack")
+    void popFromEmptyStack() {
+        MyStack<Integer> myStack = new MyStack<>();
+        Object element = myStack.pop();
+    }
 }
