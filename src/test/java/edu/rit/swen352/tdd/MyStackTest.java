@@ -75,4 +75,12 @@ class MyStackTest {
         myStack.push(5);
         assertFalse(myStack.isEmpty());
     }
+
+    @Test
+    @DisplayName("size, non-empty stack")
+    void sizeNonEmpty() {
+        MyStack<Integer> myStack = new MyStack<>();
+        myStack.push(5);
+        assertEquals(1, myStack.size());
+    }
 }
