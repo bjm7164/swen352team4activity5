@@ -1,5 +1,10 @@
 package edu.rit.swen352.tdd;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.function.Consumer;
+
 /**
  * MyList is a flexible-sized sequence of elements with no gaps.
  *
@@ -19,4 +24,57 @@ package edu.rit.swen352.tdd;
  * @param <T> the type of elements in the list.
  */
 public class MyList<T> {
+    private List<T> elements;
+
+    public MyList(T... initals)
+    {
+        elements = new ArrayList<>();
+
+        for (T item : initals)
+        {
+            elements.add(item);
+        }
+    }
+
+    public int size()
+    {
+        return elements.size();
+    }
+
+    public void add(T element)
+    {
+        if (!elements.contains(element))
+        {
+            elements.add(element);
+        }
+    }
+
+    public void remove(T element)
+    {
+        elements.remove(element);
+    }
+
+    public T get(int index)
+    {
+        if (index > elements.size())
+        {
+            throw new NoSuchElementException("Index out of bounds");
+        }
+        else
+        {
+            return elements.get(index);
+        }
+
+    }
+
+    public boolean isEmpty()
+    {
+        return elements.isEmpty();
+    }
+
+    public void forEach(Consumer<T> action)
+    {
+        elements.forEach(action);
+    }
+
 }

@@ -1,10 +1,174 @@
 package edu.rit.swen352.tdd;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.NoSuchElementException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Test suite for the {@link MyList} component.
  */
 class MyListTest {
+
+    /**
+     * Test building the object
+     */
+    @org.junit.jupiter.api.Test
+    void testConstructor()
+    {
+        MyList<String> myList = new MyList<String>();
+        assertNotNull(myList);
+    }
+
+    /**
+     * Test building the object with a parameter
+     */
+    @org.junit.jupiter.api.Test
+    void testConstructorPopulated()
+    {
+        List test = new ArrayList<String>();
+        test.add("hi");
+        test.add("professor");
+        test.add("Basham");
+
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        assertNotNull(myList);
+        assertEquals(test.size(), myList.size());
+    }
+
+    /**
+     * Test adding one element to the object
+     */
+    @org.junit.jupiter.api.Test
+    void testAddElement()
+    {
+        List expected = new ArrayList<String>();
+        expected.add("hi");
+        expected.add("professor");
+        expected.add("Basham");
+        expected.add("I love formula one!");
+
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        assertNotNull(myList);
+        assertEquals(expected.size()-1, myList.size());
+        myList.add("I love formula one!");
+        assertEquals(expected.size(), myList.size());
+    }
+
+    /**
+     * Test adding one element to the object when the element already exists
+     */
+    @org.junit.jupiter.api.Test
+    void testAddPreexistingElement()
+    {
+        List expected = new ArrayList<String>();
+        expected.add("hi");
+        expected.add("professor");
+        expected.add("Basham");
+
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        assertNotNull(myList);
+        int initalSize = myList.size();
+        assertEquals(expected.size(), initalSize);
+        myList.add("hi");
+        assertEquals(initalSize, myList.size());
+    }
+
+    /**
+     * Test removing an element from the list
+     */
+    @org.junit.jupiter.api.Test
+    void testRemoveElement()
+    {
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        assertNotNull(myList);
+        assertEquals(3, myList.size());
+        myList.remove("hi");
+        assertEquals(2, myList.size());
+    }
+
+    /**
+     * Test getting an element that exists
+     */
+    @org.junit.jupiter.api.Test
+    void testGetElementValid()
+    {
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        assertNotNull(myList);
+        String item = myList.get(0);
+        assertEquals("hi", item);
+    }
+
+    /**
+     * Test getting an element outside of the list size
+     */
+    @org.junit.jupiter.api.Test
+    void testGetElementInvalid()
+    {
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        assertNotNull(myList);
+        assertThrows(NoSuchElementException.class, () -> myList.get(4));
+    }
+
+    /**
+     * Test isEmpty with an empty list
+     */
+    @org.junit.jupiter.api.Test
+    void testIsEmptyTrue()
+    {
+        MyList<String> myList = new MyList<String>();
+        assertNotNull(myList);
+        assertTrue(myList.isEmpty());
+    }
+
+    /**
+     * Test isEmpty with a populated list
+     */
+    @org.junit.jupiter.api.Test
+    void testIsEmptyFalse()
+    {
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        assertNotNull(myList);
+        assertFalse(myList.isEmpty());
+    }
+
+    /**
+     * Test size with an unpopulated list
+     */
+    @org.junit.jupiter.api.Test
+    void testSize0()
+    {
+        MyList<String> myList = new MyList<String>();
+        assertNotNull(myList);
+        assertEquals(0, myList.size());
+    }
+
+    /**
+     * Test size with an unpopulated list
+     */
+    @org.junit.jupiter.api.Test
+    void testSizeMore()
+    {
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        assertNotNull(myList);
+        assertEquals(3, myList.size());
+    }
+
+
+    /**
+     * Test size with an unpopulated list
+     */
+    @org.junit.jupiter.api.Test
+    void testForEach()
+    {
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        List<String> processed = new ArrayList<>();
+
+        // iterate through myList and add each element to new list to verify iterator works
+        myList.forEach(processed::add);
+        assertEquals(3, processed.size());
+    }
+
 
 }
