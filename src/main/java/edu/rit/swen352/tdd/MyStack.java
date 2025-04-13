@@ -25,6 +25,10 @@ public class MyStack<T> {
         this.stack =  new Object[this.capacity];
     }
 
+    public MyStack (int capacity) {
+
+    }
+
     public int getCapacity() {
         return this.capacity;
     }

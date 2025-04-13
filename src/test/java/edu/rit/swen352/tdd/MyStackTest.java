@@ -15,4 +15,11 @@ class MyStackTest {
         MyStack<Integer> myStack = new MyStack<>();
         assertEquals(16, myStack.getCapacity());
     }
+
+    @Test
+    @DisplayName("Constructor with capacity parameter")
+    void stackConstructorWithParam() {
+        MyStack<Integer> myStack = new MyStack<>(5);
+        assertEquals(5, myStack.getCapacity());
+    }
 }
