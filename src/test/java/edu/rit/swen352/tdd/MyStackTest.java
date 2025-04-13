@@ -30,4 +30,13 @@ class MyStackTest {
         myStack.push(123);
         assertEquals(0, myStack.getTop());
     }
+
+    @Test
+    @DisplayName("Push item onto full stack")
+    void pushOntoFullStack() {
+        MyStack<Integer> myStack = new MyStack<>(2);
+        myStack.push(1);
+        myStack.push(2);
+        myStack.push(3);
+    }
 }
