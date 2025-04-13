@@ -35,4 +35,12 @@ class MyCalculatorTest {
         int result = calculator.multiply(3, 2);
         Assertions.assertEquals(6, result);
     }
+
+    @Test
+    @DisplayName("Divide 2 numbers")
+    void divideTest() {
+        MyCalculator calculator = new MyCalculator();
+        int result = calculator.divide(10, 2);
+        Assertions.assertEquals(5, result);
+    }
 }

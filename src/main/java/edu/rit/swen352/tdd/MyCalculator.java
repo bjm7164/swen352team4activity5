@@ -36,6 +36,10 @@ public class MyCalculator {
         return this.result;
     }
 
+    public int divide(int x, int y) {
+        return 0;
+    }
+
     public int getResult() {
         return this.result;
     }
