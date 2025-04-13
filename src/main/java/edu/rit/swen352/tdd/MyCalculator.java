@@ -23,11 +23,12 @@ public class MyCalculator {
 
     public int add(int x, int y) {
         this.result = x + y;
-        return result;
+        return this.result;
     }
 
     public int subtract(int x, int y) {
-        return 0;
+        this.result = x - y;
+        return this.result;
     }
 
     public int getResult() {

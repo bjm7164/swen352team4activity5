@@ -24,7 +24,7 @@ class MyCalculatorTest {
     @DisplayName("Subtract 2 numbers")
     void subtractTest() {
         MyCalculator calculator = new MyCalculator();
-        int result = calculator.add(3, 2);
+        int result = calculator.subtract(3, 2);
         Assertions.assertEquals(1, result);
     }
 }
