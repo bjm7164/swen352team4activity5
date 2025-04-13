@@ -37,7 +37,8 @@ public class MyCalculator {
     }
 
     public int divide(int x, int y) {
-        return 0;
+        this.result = x / y;
+        return this.result;
     }
 
     public int getResult() {
