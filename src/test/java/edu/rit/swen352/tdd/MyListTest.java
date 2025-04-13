@@ -156,7 +156,19 @@ class MyListTest {
     }
 
 
+    /**
+     * Test size with an unpopulated list
+     */
+    @org.junit.jupiter.api.Test
+    void testForEach()
+    {
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        List<String> processed = new ArrayList<>();
 
+        // iterate through myList and add each element to new list to verify iterator works
+        myList.forEach(processed::add);
+        assertEquals(3, processed.size());
+    }
 
 
 }
