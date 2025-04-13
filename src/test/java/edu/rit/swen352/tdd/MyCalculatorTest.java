@@ -27,4 +27,12 @@ class MyCalculatorTest {
         int result = calculator.subtract(3, 2);
         Assertions.assertEquals(1, result);
     }
+
+    @Test
+    @DisplayName("Multiply 2 numbers")
+    void multiplyTest() {
+        MyCalculator calculator = new MyCalculator();
+        int result = calculator.multiply(3, 2);
+        Assertions.assertEquals(6, result);
+    }
 }

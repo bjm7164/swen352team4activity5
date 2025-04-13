@@ -31,6 +31,10 @@ public class MyCalculator {
         return this.result;
     }
 
+    public int multiply(int x, int y) {
+        return 0;
+    }
+
     public int getResult() {
         return this.result;
     }
