@@ -64,7 +64,7 @@ public class MyBlackjackDealerTest {
         MyBlackjackDealer dealer = new MyBlackjackDealer();
         assertNotNull(dealer);
 
-        dealer.dealCard();
+        dealer.dealHand(1);
         assertEquals(48, dealer.getDeckSize());
     }
 

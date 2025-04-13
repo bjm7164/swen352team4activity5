@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7d41d26-45c8-4316-9ae1-d1a9ad8edfbc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rit/swen352/tdd/MyBlackjackDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rit/swen352/tdd/MyBlackjackDealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/coverage-reports/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/coverage-reports/jacoco.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/edu.rit.swen352.tdd/MyBlackjackDealer.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/edu.rit.swen352.tdd/MyBlackjackDealer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/edu.rit.swen352.tdd/MyBlackjackDealer.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/edu.rit.swen352.tdd/MyBlackjackDealer.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/edu.rit.swen352.tdd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/edu.rit.swen352.tdd/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/edu.rit.swen352.tdd/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/edu.rit.swen352.tdd/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.rit.swen352.tdd.MyBlackjackDealerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.rit.swen352.tdd.MyBlackjackDealerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.rit.swen352.tdd.samples.NumbersTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.rit.swen352.tdd.samples.NumbersTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.rit.swen352.tdd.MyBlackjackDealerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.rit.swen352.tdd.MyBlackjackDealerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.rit.swen352.tdd.samples.NumbersTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.rit.swen352.tdd.samples.NumbersTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/rit/swen352/tdd/MyBlackjackDealerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/rit/swen352/tdd/MyBlackjackDealerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
