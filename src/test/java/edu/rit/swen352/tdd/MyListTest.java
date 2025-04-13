@@ -2,6 +2,7 @@ package edu.rit.swen352.tdd;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -97,6 +98,18 @@ class MyListTest {
         assertNotNull(myList);
         String item = myList.get(0);
         assertEquals("hi", item);
+    }
+
+    /**
+     * Test getting an element that exists
+     */
+    @org.junit.jupiter.api.Test
+    void testGetElementInvalid()
+    {
+        MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
+        assertNotNull(myList);
+        String item = myList.get(4);
+        assertThrows(NoSuchElementException.class, () -> myList.get(4));
     }
 
 
