@@ -51,4 +51,9 @@ public class MyList<T> {
     {
         elements.remove(element);
     }
+
+    public T get(int index)
+    {
+        return elements.get(index);
+    }
 }
