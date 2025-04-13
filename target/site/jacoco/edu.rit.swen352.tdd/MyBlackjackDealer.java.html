@@ -42,10 +42,14 @@ public class MyBlackjackDealer {
 
     public void dealHand(int numPlayers)
     {
-        // 2 cards per player and 2 for the dealer
-<span class="fc" id="L46">        int totalCards = (numPlayers*2) + 2;</span>
-<span class="fc" id="L47">        deckSize -= totalCards;</span>
+<span class="fc bfc" id="L45" title="All 2 branches covered.">        if (numPlayers &gt; 0)</span>
+        {
+            // 2 cards per player and 2 for the dealer
+<span class="fc" id="L48">            int totalCards = (numPlayers*2) + 2;</span>
+<span class="fc" id="L49">            deckSize -= totalCards;</span>
+        }
 
-<span class="fc" id="L49">    }</span>
+
+<span class="fc" id="L53">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
