@@ -108,7 +108,6 @@ class MyListTest {
     {
         MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
         assertNotNull(myList);
-        String item = myList.get(4);
         assertThrows(NoSuchElementException.class, () -> myList.get(4));
     }
 
