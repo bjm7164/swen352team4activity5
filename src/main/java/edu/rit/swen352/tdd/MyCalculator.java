@@ -7,10 +7,10 @@ package edu.rit.swen352.tdd;
  * Features:
  * <ul>
  *   <li>constructor: initialize the calculator with a result field</li>
- *   <li>add: return the sum of 2 provided integers</li>
- *   <li>subtract: return the difference of 2 provided integers</li>
- *   <li>multiply: return the product of 2 provided integers</li>
- *   <li>divide: return the quotient of 2 provided integers</li>
+ *   <li>add: compute the sum of 2 provided integers</li>
+ *   <li>subtract: compute the difference of 2 provided integers</li>
+ *   <li>multiply: compute the product of 2 provided integers</li>
+ *   <li>divide: compute the quotient of 2 provided integers</li>
  *   <li>getResult: returns the result of the most recent operation</li>
  * </ul>
  */
@@ -21,24 +21,20 @@ public class MyCalculator {
         this.result = 0;
     }
 
-    public int add(int x, int y) {
+    public void add(int x, int y) {
         this.result = x + y;
-        return this.result;
     }
 
-    public int subtract(int x, int y) {
+    public void subtract(int x, int y) {
         this.result = x - y;
-        return this.result;
     }
 
-    public int multiply(int x, int y) {
+    public void multiply(int x, int y) {
         this.result = x * y;
-        return this.result;
     }
 
-    public int divide(int x, int y) {
+    public void divide(int x, int y) {
         this.result = x / y;
-        return this.result;
     }
 
     public int getResult() {
