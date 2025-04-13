@@ -11,5 +11,27 @@ public class MyBlackjackDealer {
 <span class="fc" id="L11">        handValue = 0;</span>
 <span class="fc" id="L12">    }</span>
 
+    public int getDeckSize() {
+<span class="fc" id="L15">        return deckSize;</span>
+    }
+
+    public int getHandValue() {
+<span class="nc" id="L19">        return handValue;</span>
+    }
+
+    public void setDeckSize(int deckSize) {
+<span class="nc" id="L23">        this.deckSize = deckSize;</span>
+<span class="nc" id="L24">    }</span>
+
+    public void setHandValue(int handValue) {
+<span class="fc" id="L27">        this.handValue = handValue;</span>
+<span class="fc" id="L28">    }</span>
+
+    public void hit()
+    {
+<span class="fc" id="L32">        deckSize--;</span>
+<span class="fc" id="L33">    }</span>
+
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

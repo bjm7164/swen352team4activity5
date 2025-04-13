@@ -11,4 +11,26 @@ public class MyBlackjackDealer {
         handValue = 0;
     }
 
+    public int getDeckSize() {
+        return deckSize;
+    }
+
+    public int getHandValue() {
+        return handValue;
+    }
+
+    public void setDeckSize(int deckSize) {
+        this.deckSize = deckSize;
+    }
+
+    public void setHandValue(int handValue) {
+        this.handValue = handValue;
+    }
+
+    public void hit()
+    {
+        deckSize--;
+    }
+
+
 }
