@@ -68,4 +68,17 @@ public class MyBlackjackDealerTest {
         assertEquals(48, dealer.getDeckSize());
     }
 
+    /**
+     * Test dealing a hand to no players
+     */
+    @org.junit.jupiter.api.Test
+    void testDealHandNoPlayers()
+    {
+        MyBlackjackDealer dealer = new MyBlackjackDealer();
+        assertNotNull(dealer);
+
+        dealer.dealHand(0);
+        assertEquals(52, dealer.getDeckSize());
+    }
+
 }

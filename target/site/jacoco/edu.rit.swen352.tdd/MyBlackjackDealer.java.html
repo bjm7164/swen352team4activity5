@@ -35,6 +35,17 @@ public class MyBlackjackDealer {
         }
 <span class="fc" id="L36">    }</span>
 
+    public void dealCard()
+    {
+<span class="fc" id="L40">        deckSize--;</span>
+<span class="fc" id="L41">    }</span>
 
+    public void dealHand(int numPlayers)
+    {
+        // 2 cards per player and 2 for the dealer
+<span class="fc" id="L46">        int totalCards = (numPlayers*2) + 2;</span>
+<span class="fc" id="L47">        deckSize -= totalCards;</span>
+
+<span class="fc" id="L49">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

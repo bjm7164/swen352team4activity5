@@ -40,5 +40,11 @@ public class MyBlackjackDealer {
         deckSize--;
     }
 
+    public void dealHand(int numPlayers)
+    {
+        // 2 cards per player and 2 for the dealer
+        int totalCards = (numPlayers*2) + 2;
+        deckSize -= totalCards;
 
+    }
 }

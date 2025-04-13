@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="edu.rit.swen352.tdd.samples.NumbersTest" time="0.29" tests="39" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="edu.rit.swen352.tdd.samples.NumbersTest" time="0.298" tests="39" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\JT\.jdks\corretto-21.0.6\bin"/>
-    <property name="sun.java.command" value="C:\Users\JT\AppData\Local\Temp\surefire13074694002380107097\surefirebooter-20250413175112763_5.jar C:\Users\JT\AppData\Local\Temp\surefire13074694002380107097 2025-04-13T17-51-12_457-jvmRun2 surefire-20250413175112763_2tmp surefire_1-20250413175112763_4tmp"/>
+    <property name="sun.java.command" value="C:\Users\JT\AppData\Local\Temp\surefire44886828633523625\surefirebooter-20250413175832226_6.jar C:\Users\JT\AppData\Local\Temp\surefire44886828633523625 2025-04-13T17-58-31_943-jvmRun2 surefire-20250413175832226_1tmp surefire_0-20250413175832226_3tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\JT\RIT\swen352team4activity5\target\test-classes;C:\Users\JT\RIT\swen352team4activity5\target\classes;C:\Users\JT\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\JT\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\JT\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\JT\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\JT\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\JT\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\JT\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\JT\.m2\repository\org\mockito\mockito-core\5.12.0\mockito-core-5.12.0.jar;C:\Users\JT\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\JT\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.15\byte-buddy-agent-1.14.15.jar;C:\Users\JT\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\JT\AppData\Local\Temp\surefire13074694002380107097\surefirebooter-20250413175112763_5.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\JT\AppData\Local\Temp\surefire44886828633523625\surefirebooter-20250413175832226_6.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.6+7-LTS"/>
@@ -60,43 +60,43 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="negativeNumbers" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.043"/>
-  <testcase name="largeNumbers_L10N(int, String, Locale)[1]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.034"/>
-  <testcase name="largeNumbers_L10N(int, String, Locale)[2]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
-  <testcase name="largeNumbers_L10N(int, String, Locale)[3]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.01"/>
-  <testcase name="largeNumbers_L10N(int, String, Locale)[4]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
+  <testcase name="negativeNumbers" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.035"/>
+  <testcase name="largeNumbers_L10N(int, String, Locale)[1]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.036"/>
+  <testcase name="largeNumbers_L10N(int, String, Locale)[2]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.002"/>
+  <testcase name="largeNumbers_L10N(int, String, Locale)[3]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.008"/>
+  <testcase name="largeNumbers_L10N(int, String, Locale)[4]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.002"/>
   <testcase name="largeNumbers(int, String)[1]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.003"/>
-  <testcase name="largeNumbers(int, String)[2]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.005"/>
+  <testcase name="largeNumbers(int, String)[2]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
   <testcase name="largeNumbers(int, String)[3]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
-  <testcase name="largeNumbers(int, String)[4]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
-  <testcase name="largeNumbers(int, String)[5]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
+  <testcase name="largeNumbers(int, String)[4]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.004"/>
+  <testcase name="largeNumbers(int, String)[5]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.002"/>
   <testcase name="largeNumbers(int, String)[6]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
-  <testcase name="largeNumbers(int, String)[7]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.0"/>
+  <testcase name="largeNumbers(int, String)[7]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.002"/>
   <testcase name="otherTwoDigits(int, String)[1]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
   <testcase name="otherTwoDigits(int, String)[2]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
   <testcase name="otherTwoDigits(int, String)[3]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
   <testcase name="otherTwoDigits(int, String)[4]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
-  <testcase name="otherTwoDigits(int, String)[5]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
-  <testcase name="otherTwoDigits(int, String)[6]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.0"/>
+  <testcase name="otherTwoDigits(int, String)[5]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.002"/>
+  <testcase name="otherTwoDigits(int, String)[6]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
   <testcase name="otherTwoDigits(int, String)[7]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
   <testcase name="otherTwoDigits(int, String)[8]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.0"/>
   <testcase name="teens(int, String)[1]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
-  <testcase name="teens(int, String)[2]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
-  <testcase name="teens(int, String)[3]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
-  <testcase name="teens(int, String)[4]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
-  <testcase name="teens(int, String)[5]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.0"/>
-  <testcase name="teens(int, String)[6]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.002"/>
-  <testcase name="teens(int, String)[7]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.0"/>
+  <testcase name="teens(int, String)[2]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.002"/>
+  <testcase name="teens(int, String)[3]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.0"/>
+  <testcase name="teens(int, String)[4]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.002"/>
+  <testcase name="teens(int, String)[5]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
+  <testcase name="teens(int, String)[6]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
+  <testcase name="teens(int, String)[7]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
   <testcase name="teens(int, String)[8]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
   <testcase name="teens(int, String)[9]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
-  <testcase name="teens(int, String)[10]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
-  <testcase name="singleDigits(int, String)[1]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.003"/>
-  <testcase name="singleDigits(int, String)[2]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.0"/>
-  <testcase name="singleDigits(int, String)[3]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.0"/>
-  <testcase name="singleDigits(int, String)[4]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.0"/>
+  <testcase name="teens(int, String)[10]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.0"/>
+  <testcase name="singleDigits(int, String)[1]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.002"/>
+  <testcase name="singleDigits(int, String)[2]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
+  <testcase name="singleDigits(int, String)[3]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
+  <testcase name="singleDigits(int, String)[4]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
   <testcase name="singleDigits(int, String)[5]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.0"/>
   <testcase name="singleDigits(int, String)[6]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.0"/>
-  <testcase name="singleDigits(int, String)[7]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.0"/>
-  <testcase name="singleDigits(int, String)[8]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
-  <testcase name="singleDigits(int, String)[9]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
+  <testcase name="singleDigits(int, String)[7]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.001"/>
+  <testcase name="singleDigits(int, String)[8]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.0"/>
+  <testcase name="singleDigits(int, String)[9]" classname="edu.rit.swen352.tdd.samples.NumbersTest" time="0.0"/>
 </testsuite>
