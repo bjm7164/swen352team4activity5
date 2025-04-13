@@ -3,6 +3,7 @@ package edu.rit.swen352.tdd;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.function.Consumer;
 
 /**
  * MyList is a flexible-sized sequence of elements with no gaps.
@@ -70,4 +71,10 @@ public class MyList<T> {
     {
         return elements.isEmpty();
     }
+
+    public void forEach(Consumer<T> action)
+    {
+        elements.forEach(action);
+    }
+
 }
