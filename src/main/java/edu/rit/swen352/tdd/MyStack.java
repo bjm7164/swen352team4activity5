@@ -54,6 +54,8 @@ public class MyStack<T> {
     }
 
     public Object pop() {
-        return null;
+        Object element = this.stack[top];
+        top--;
+        return element;
     }
 }
