@@ -133,6 +133,19 @@ class MyListTest {
         assertFalse(myList.isEmpty());
     }
 
+    /**
+     * Test size with an unpopulated list
+     */
+    @org.junit.jupiter.api.Test
+    void testSize0()
+    {
+        MyList<String> myList = new MyList<String>();
+        assertNotNull(myList);
+        assertEquals(0, myList.size());
+    }
+
+
+
 
 
 }
