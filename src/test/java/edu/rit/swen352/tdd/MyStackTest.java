@@ -22,4 +22,12 @@ class MyStackTest {
         MyStack<Integer> myStack = new MyStack<>(5);
         assertEquals(5, myStack.getCapacity());
     }
+
+    @Test
+    @DisplayName("Push item onto stack")
+    void pushTest() {
+        MyStack<Integer> myStack = new MyStack<>();
+        myStack.push(123);
+        assertEquals(0, myStack.getTop());
+    }
 }

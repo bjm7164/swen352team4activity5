@@ -36,4 +36,12 @@ public class MyStack<T> {
     public int getCapacity() {
         return this.capacity;
     }
+
+    public void push(T element) {
+
+    }
+
+    public int getTop() {
+        return -1;
+    }
 }
