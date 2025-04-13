@@ -69,6 +69,6 @@ public class MyStack<T> {
     }
 
     public int size() {
-        return 0;
+        return top + 1;
     }
 }
