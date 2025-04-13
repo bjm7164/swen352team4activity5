@@ -29,7 +29,10 @@ public class MyBlackjackDealer {
 
     public void hit()
     {
-        deckSize--;
+        if (handValue <= 15)
+        {
+            deckSize--;
+        }
     }
 
 
