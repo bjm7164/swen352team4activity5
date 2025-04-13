@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: edu.rit.swen352.tdd.MyListTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.086 s <<< FAILURE! -- in edu.rit.swen352.tdd.MyListTest
-edu.rit.swen352.tdd.MyListTest.testGetElementInvalid -- Time elapsed: 0.030 s <<< ERROR!
+Tests run: 8, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.092 s <<< FAILURE! -- in edu.rit.swen352.tdd.MyListTest
+edu.rit.swen352.tdd.MyListTest.testGetElementInvalid -- Time elapsed: 0.028 s <<< ERROR!
 java.util.NoSuchElementException: Index out of bounds
 	at edu.rit.swen352.tdd.MyList.get(MyList.java:60)
 	at edu.rit.swen352.tdd.MyListTest.testGetElementInvalid(MyListTest.java:111)

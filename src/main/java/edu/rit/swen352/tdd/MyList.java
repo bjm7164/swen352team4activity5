@@ -65,4 +65,9 @@ public class MyList<T> {
         }
 
     }
+
+    public boolean isEmpty()
+    {
+        return elements.isEmpty();
+    }
 }
