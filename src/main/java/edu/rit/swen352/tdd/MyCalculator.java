@@ -26,6 +26,10 @@ public class MyCalculator {
         return result;
     }
 
+    public int subtract(int x, int y) {
+        return 0;
+    }
+
     public int getResult() {
         return this.result;
     }
