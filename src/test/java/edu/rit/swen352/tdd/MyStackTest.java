@@ -68,5 +68,11 @@ class MyStackTest {
         assertTrue(myStack.isEmpty());
     }
 
-    
+    @Test
+    @DisplayName("isEmpty, non-empty stack")
+    void isEmptyFalse() {
+        MyStack<Integer> myStack = new MyStack<>();
+        myStack.push(5);
+        assertFalse(myStack.isEmpty());
+    }
 }
