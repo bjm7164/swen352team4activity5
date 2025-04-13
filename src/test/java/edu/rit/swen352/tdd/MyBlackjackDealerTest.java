@@ -28,6 +28,18 @@ public class MyBlackjackDealerTest {
         assertTrue(dealer.getDeckSize() < 52);
     }
 
+    /**
+     * Test constructor makes an object
+     */
+    @org.junit.jupiter.api.Test
+    void testHitPassive()
+    {
+        MyBlackjackDealer dealer = new MyBlackjackDealer();
+        assertNotNull(dealer);
 
+        dealer.setHandValue(18);
+        dealer.hit();
+        assertEquals(52, dealer.getDeckSize());
+    }
 
 }
