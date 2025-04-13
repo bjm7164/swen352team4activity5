@@ -11,4 +11,12 @@ class MyCalculatorTest {
         MyCalculator calculator = new MyCalculator();
         Assertions.assertEquals(0, calculator.getResult());
     }
+
+    @Test
+    @DisplayName("Adding 2 numbers")
+    void addTest() {
+        MyCalculator calculator = new MyCalculator();
+        int result = calculator.add(1, 2);
+        Assertions.assertEquals(3, result);
+    }
 }
