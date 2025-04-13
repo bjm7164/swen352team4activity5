@@ -19,15 +19,18 @@ package edu.rit.swen352.tdd;
 public class MyStack<T> {
     private Object[] stack;
     private int capacity;
+    private int top;
 
     public MyStack () {
         this.capacity = 16;
         this.stack =  new Object[this.capacity];
+        this.top = -1;
     }
 
     public MyStack (int capacity) {
         this.capacity = capacity;
         this.stack = new Object[this.capacity];
+        this.top = -1;
     }
 
     public int getCapacity() {
