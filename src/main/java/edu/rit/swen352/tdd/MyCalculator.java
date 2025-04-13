@@ -15,5 +15,13 @@ package edu.rit.swen352.tdd;
  * </ul>
  */
 public class MyCalculator {
-    public Integer getResult() { return null; }
+    private int result;
+
+    public MyCalculator() {
+        this.result = 0;
+    }
+
+    public int getResult() {
+        return this.result;
+    }
 }
