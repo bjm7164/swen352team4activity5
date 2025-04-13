@@ -96,7 +96,7 @@ class MyListTest {
         MyList<String> myList = new MyList<String>("hi", "professor", "Basham");
         assertNotNull(myList);
         String item = myList.get(0);
-        assertEquals("professor", item);
+        assertEquals("hi", item);
     }
 
 
