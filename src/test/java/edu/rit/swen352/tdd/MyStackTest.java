@@ -60,4 +60,11 @@ class MyStackTest {
         assertThrows(NoSuchElementException.class, () -> myStack.pop());
         assertEquals(-1, myStack.getTop());
     }
+
+    @Test
+    @DisplayName("isEmpty, empty stack")
+    void isEmptyTrue() {
+        MyStack<Integer> myStack = new MyStack<>();
+        assertTrue(myStack.isEmpty());
+    }
 }

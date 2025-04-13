@@ -63,4 +63,8 @@ public class MyStack<T> {
         top--;
         return element;
     }
+
+    public boolean isEmpty() {
+        return false;
+    }
 }
