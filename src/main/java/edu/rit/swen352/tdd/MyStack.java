@@ -52,4 +52,8 @@ public class MyStack<T> {
     public Object peek() {
         return this.stack[top];
     }
+
+    public Object pop() {
+        return null;
+    }
 }

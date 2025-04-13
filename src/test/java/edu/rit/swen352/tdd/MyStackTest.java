@@ -41,4 +41,13 @@ class MyStackTest {
         assertThrows(IllegalStateException.class, () -> myStack.push(3));
         assertEquals(2, myStack.peek());
     }
+
+    @Test
+    @DisplayName("Pop item from stack")
+    void popTest() {
+        MyStack<Integer> myStack = new MyStack<>();
+        myStack.push(123);
+        Object element = myStack.pop();
+        assertEquals(123, element);
+    }
 }
