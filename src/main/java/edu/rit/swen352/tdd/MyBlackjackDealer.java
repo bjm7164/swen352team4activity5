@@ -35,5 +35,10 @@ public class MyBlackjackDealer {
         }
     }
 
+    public void dealCard()
+    {
+        deckSize--;
+    }
+
 
 }
