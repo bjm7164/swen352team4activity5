@@ -52,6 +52,9 @@ public class MyQueue {
     }
 
     public Object peek() {
+        if (isEmpty()) {
+            throw new java.util.NoSuchElementException("Queue is empty");
+        }
         return elements[front];
     }
 
