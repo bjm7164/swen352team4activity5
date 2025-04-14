@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a6e6c557-8a7d-4e53-b587-49fefb21d2f8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/rit/swen352/tdd/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rit/swen352/tdd/MyQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/rit/swen352/tdd/MyQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/rit/swen352/tdd/MyQueueTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
