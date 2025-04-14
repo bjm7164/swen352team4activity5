@@ -41,4 +41,17 @@ public class MyQueueTest {
         assertEquals("A", queue.remove());
     }
 
+    /**
+     * Test the peek method.
+     */
+    @org.junit.jupiter.api.Test
+    void testPeek() {
+        MyQueue queue = new MyQueue(1);
+        queue.add("A");
+        queue.remove();
+        assertThrows(java.util.NoSuchElementException.class, () -> {
+            queue.peek();
+        });
+    }
+
 }

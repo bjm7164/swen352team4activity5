@@ -51,6 +51,10 @@ public class MyQueue {
         return element;
     }
 
+    public Object peek() {
+        return elements[front];
+    }
+
     public int getSize() {
         return size;
     }
