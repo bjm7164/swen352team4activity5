@@ -12,4 +12,29 @@ package edu.rit.swen352.tdd;
  *</ul>
  */
 public class MyQueue {
+    private Object[] elements;
+    private int size;
+    private int front;
+    private int rear;
+    private int capacity;
+
+    /**
+     * Constructs an empty queue with a default capacity.
+     */
+    public MyQueue(int capacity) {
+        this.capacity = capacity;
+        this.elements = new Object[capacity];
+        this.size = 0;
+        this.front = 0;
+        this.rear = -1;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
 }
