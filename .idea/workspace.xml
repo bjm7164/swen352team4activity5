@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a6e6c557-8a7d-4e53-b587-49fefb21d2f8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/rit/swen352/tdd/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rit/swen352/tdd/MyQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/rit/swen352/tdd/MyQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/rit/swen352/tdd/MyQueueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/rit/swen352/tdd/MyQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/rit/swen352/tdd/MyQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/rit/swen352/tdd/MyQueueTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/rit/swen352/tdd/MyQueueTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2vY6JLwL8cG8th47DMTqSOunhBx" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "christopherwest-queue-proposal",
+    "last_opened_file_path": "C:/Users/chris/OneDrive/Desktop/swen352/swen352team4activity5"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="edu.rit.swen352.tdd" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MyQueueTest.testPeek">
+    <configuration name="MyOptionalTest.testIfPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-driven-development" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.rit.swen352.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.rit.swen352.tdd" />
+      <option name="MAIN_CLASS_NAME" value="edu.rit.swen352.tdd.MyOptionalTest" />
+      <option name="METHOD_NAME" value="testIfPresent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyQueueTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-driven-development" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.rit.swen352.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.rit.swen352.tdd" />
+      <option name="MAIN_CLASS_NAME" value="edu.rit.swen352.tdd.MyQueueTest" />
+      <option name="METHOD_NAME" value="testAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyQueueTest.testConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-driven-development" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.rit.swen352.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.rit.swen352.tdd" />
+      <option name="MAIN_CLASS_NAME" value="edu.rit.swen352.tdd.MyQueueTest" />
+      <option name="METHOD_NAME" value="testConstructor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyQueueTest.testPeek" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-driven-development" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.rit.swen352.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.rit.swen352.tdd" />
+      <option name="MAIN_CLASS_NAME" value="edu.rit.swen352.tdd.MyQueueTest" />
+      <option name="METHOD_NAME" value="testPeek" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyQueueTest.testRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-driven-development" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.rit.swen352.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.rit.swen352.tdd" />
+      <option name="MAIN_CLASS_NAME" value="edu.rit.swen352.tdd.MyQueueTest" />
+      <option name="METHOD_NAME" value="testRemove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyQueueTest.testPeek" />
+        <item itemvalue="JUnit.MyQueueTest.testRemove" />
+        <item itemvalue="JUnit.MyQueueTest.testAdd" />
+        <item itemvalue="JUnit.MyQueueTest.testConstructor" />
+        <item itemvalue="JUnit.MyOptionalTest.testIfPresent" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a6e6c557-8a7d-4e53-b587-49fefb21d2f8" name="Changes" comment="" />
+      <created>1744309598491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744309598491</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
