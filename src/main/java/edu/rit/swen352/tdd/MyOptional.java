@@ -24,4 +24,61 @@ package edu.rit.swen352.tdd;
  * @param <T> the type of element.
  */
 public class MyOptional<T> {
+    private static final MyOptional<?> EMPTY = new MyOptional<>();
+
+    private final T element;
+
+
+    private MyOptional() {
+        this.element = null;
+    }
+
+    private MyOptional(T element) {
+        this.element = element;
+    }
+
+    public static <T> MyOptional<T> empty() {
+        return new MyOptional<>();
+    }
+
+    public T get() {
+        if (element == null) {
+            throw new java.util.NoSuchElementException("No value present");
+        }
+        return element;
+    }
+
+    public static <T> MyOptional<T> of(T value) {
+        if (value == null) {
+            throw new NullPointerException("Value cannot be null");
+        }
+        return new MyOptional<>(value);
+    }
+
+    public static <T> MyOptional<T> ofNullable(T value) {
+        if (value == null) {
+            return empty();
+        }
+        return new MyOptional<>(value);
+    }
+
+    public boolean isPresent() {
+        return element != null;
+    }
+
+    public <R> MyOptional<R> map(java.util.function.Function<? super T, ? extends R> mapper) {
+        if (element == null) {
+            return empty();
+        }
+        R mappedValue = mapper.apply(element);
+        return new MyOptional<>(mappedValue);
+    }
+
+    public void ifPresent(java.util.function.Consumer<? super T> consumer) {
+        if (element != null) {
+            consumer.accept(element);
+        }
+    }
+
+
 }
