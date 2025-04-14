@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6e6c557-8a7d-4e53-b587-49fefb21d2f8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/rit/swen352/tdd/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/rit/swen352/tdd/MyQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/rit/swen352/tdd/MyQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/rit/swen352/tdd/MyQueueTest.java" afterDir="false" />
     </list>
@@ -47,7 +46,7 @@
       <recent name="edu.rit.swen352.tdd" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyQueueTest.testConstructor">
+  <component name="RunManager" selected="JUnit.MyQueueTest.testAdd">
     <configuration name="MyOptionalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test-driven-development" />
       <extension name="coverage">
@@ -59,22 +58,6 @@
       <option name="PACKAGE_NAME" value="edu.rit.swen352.tdd" />
       <option name="MAIN_CLASS_NAME" value="edu.rit.swen352.tdd.MyOptionalTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyOptionalTest.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test-driven-development" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.rit.swen352.tdd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.rit.swen352.tdd" />
-      <option name="MAIN_CLASS_NAME" value="edu.rit.swen352.tdd.MyOptionalTest" />
-      <option name="METHOD_NAME" value="testGet" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,6 +94,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyQueueTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-driven-development" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.rit.swen352.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.rit.swen352.tdd" />
+      <option name="MAIN_CLASS_NAME" value="edu.rit.swen352.tdd.MyQueueTest" />
+      <option name="METHOD_NAME" value="testAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyQueueTest.testConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test-driven-development" />
       <extension name="coverage">
@@ -129,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyQueueTest.testAdd" />
         <item itemvalue="JUnit.MyQueueTest.testConstructor" />
         <item itemvalue="JUnit.MyOptionalTest.testIfPresent" />
         <item itemvalue="JUnit.MyOptionalTest.testMap" />
         <item itemvalue="JUnit.MyOptionalTest" />
-        <item itemvalue="JUnit.MyOptionalTest.testGet" />
       </list>
     </recent_temporary>
   </component>

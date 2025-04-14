@@ -17,4 +17,17 @@ public class MyQueueTest {
         });
     }
 
+    /**
+     * Test the add method.
+     */
+    @org.junit.jupiter.api.Test
+    void testAdd() {
+        MyQueue queue = new MyQueue(2);
+        queue.add("A");
+        queue.add("B");
+       assertThrows(IllegalStateException.class, () -> {
+            queue.add("C");
+        });
+    }
+
 }

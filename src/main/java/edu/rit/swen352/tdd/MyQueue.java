@@ -32,6 +32,12 @@ public class MyQueue {
         this.rear = 0;
     }
 
+    public void add(Object element) {
+        elements[rear] = element;
+        rear = (rear + 1) % capacity;
+        size++;
+    }
+
     public int getSize() {
         return size;
     }
