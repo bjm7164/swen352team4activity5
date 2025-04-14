@@ -33,6 +33,9 @@ public class MyQueue {
     }
 
     public void add(Object element) {
+        if (size == capacity) {
+            throw new IllegalStateException("Queue is full");
+        }
         elements[rear] = element;
         rear = (rear + 1) % capacity;
         size++;
