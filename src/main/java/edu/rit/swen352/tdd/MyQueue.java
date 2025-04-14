@@ -22,12 +22,14 @@ public class MyQueue {
      * Constructs an empty queue with a default capacity.
      */
     public MyQueue(int capacity) {
-
+        if (capacity <= 0) {
+            throw new IllegalArgumentException("Capacity must be greater than 0");
+        }
         this.capacity = capacity;
         this.elements = new Object[capacity];
         this.size = 0;
         this.front = 0;
-        this.rear = -1;
+        this.rear = 0;
     }
 
     public int getSize() {
