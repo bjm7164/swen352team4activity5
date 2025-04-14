@@ -22,6 +22,7 @@ public class MyQueue {
      * Constructs an empty queue with a default capacity.
      */
     public MyQueue(int capacity) {
+
         this.capacity = capacity;
         this.elements = new Object[capacity];
         this.size = 0;
