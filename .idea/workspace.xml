@@ -46,22 +46,7 @@
       <recent name="edu.rit.swen352.tdd" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyQueueTest.testAdd">
-    <configuration name="MyOptionalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test-driven-development" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.rit.swen352.tdd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.rit.swen352.tdd" />
-      <option name="MAIN_CLASS_NAME" value="edu.rit.swen352.tdd.MyOptionalTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MyQueueTest.testRemove">
     <configuration name="MyOptionalTest.testIfPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test-driven-development" />
       <extension name="coverage">
@@ -126,13 +111,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyQueueTest.testRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-driven-development" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.rit.swen352.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.rit.swen352.tdd" />
+      <option name="MAIN_CLASS_NAME" value="edu.rit.swen352.tdd.MyQueueTest" />
+      <option name="METHOD_NAME" value="testRemove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyQueueTest.testRemove" />
         <item itemvalue="JUnit.MyQueueTest.testAdd" />
         <item itemvalue="JUnit.MyQueueTest.testConstructor" />
         <item itemvalue="JUnit.MyOptionalTest.testIfPresent" />
         <item itemvalue="JUnit.MyOptionalTest.testMap" />
-        <item itemvalue="JUnit.MyOptionalTest" />
       </list>
     </recent_temporary>
   </component>

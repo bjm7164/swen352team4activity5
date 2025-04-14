@@ -30,4 +30,15 @@ public class MyQueueTest {
         });
     }
 
+    /**
+     * Test the remove method.
+     */
+    @org.junit.jupiter.api.Test
+    void testRemove() {
+        MyQueue queue = new MyQueue(2);
+        queue.add("A");
+        queue.add("B");
+        assertEquals("A", queue.remove());
+    }
+
 }

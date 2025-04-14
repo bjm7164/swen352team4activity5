@@ -41,6 +41,10 @@ public class MyQueue {
         size++;
     }
 
+    public Object remove() {
+        return null;
+    }
+
     public int getSize() {
         return size;
     }
