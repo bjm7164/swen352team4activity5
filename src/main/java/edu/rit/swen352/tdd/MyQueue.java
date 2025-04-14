@@ -42,7 +42,13 @@ public class MyQueue {
     }
 
     public Object remove() {
-        return null;
+        if (isEmpty()) {
+            throw new java.util.NoSuchElementException("Queue is empty");
+        }
+        Object element = elements[front];
+        front = (front + 1) % capacity;
+        size--;
+        return element;
     }
 
     public int getSize() {
